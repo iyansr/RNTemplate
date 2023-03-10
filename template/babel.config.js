@@ -6,7 +6,7 @@ module.exports = {
       {
         root: ['./'],
         alias: {
-          '@modules': './modules/src',
+          '@modules': './modules',
         },
         extensions: [
           '.ios.ts',
