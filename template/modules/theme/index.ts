@@ -35,6 +35,7 @@ export const theme = createTheme({
   textVariants: {
     defaults: {
       color: 'black',
+      fontFamily: 'Plus Jakarta Sans',
     },
   },
 });
