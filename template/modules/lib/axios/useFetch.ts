@@ -1,6 +1,3 @@
-/* eslint-disable @typescript-eslint/strict-boolean-expressions */
-/* eslint-disable no-nested-ternary */
-
 import isEmpty from 'lodash/isEmpty';
 import merge from 'lodash/merge';
 
@@ -19,7 +16,6 @@ export default function useFetch<R>(fetchFn: (...args: any[]) => AxiosRequestCon
       const _fetchConfig = fetchFn(...args);
 
       const defaultHeader = {
-        Role: 'Member',
         ...(!isEmpty(jwt)
           ? {
               authorization: `Bearer ${jwt}`,
